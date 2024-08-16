@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Endangered Animals</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #e8f5e9; /* Very light green background for a fresh feel */
+        }
+
+        header {
+            background-color: #388e3c; /* Dark green for the header */
+            color: #fff;
+            padding: 30px 0; /* Increased padding for a larger header area */
+            text-align: center;
+            position: sticky; /* Make the header sticky */
+            top: 0; /* Stick the header to the top of the viewport */
+            z-index: 1000; /* Ensure the header stays above other content */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px; /* Increased margin between menu items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 22px; /* Increased font size for navigation links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4caf50, #66bb6a); /* Green gradient background */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px; /* Reduced padding for the hero section */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #c8e6c9; /* Light green background */
+            border: 2px solid #4caf50; /* Green border */
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .about-text img {
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            line-height: 1.6; /* Improve readability with increased line height */
+        }
+
+        footer {
+            background-color: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0; /* Increased padding for footer */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>About Us</h1>
+            <p>Learn more about our mission, values, and the work we do to protect endangered animals.</p>
+        </section>
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <div class="about-text">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhUYGRgaHBocHBwYGhoYGRkaGhgaGhgYGBwcIS4lHCErIRgaJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrISU0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0QDQ0NP/AABEIALcBFAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAACBQYBBwj/xAA/EAACAQIDBQUHAgQGAAcAAAABAgADEQQhMQUSQVFhBiJxgZETMqGxwdHwQlIUcuHxB0NUYoKSFRZTk6PC4v/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACQRAAICAgMAAgIDAQAAAAAAAAABAhEhMQMSQRNRMmEUInEE/9oADAMBAAIRAxEAPwDm8DjCoyM0Fq3NyZzaMRxjaYg2nKpL0BsYnEDdsITZuMCzCdzaUp1yNIVyNys3U7LEvviIoSsSwuP6yVsXnKSmtmplseCwvMQ3vYzabEAiZuIESaVWFEWpKh7mBMJRW8g0Lph2OURqDON1mi0MRo2UWnDU0tIphAYbZpEWFUyiCEEnIVnpMCTaWZoNs4I4FVsZp4ojjL1McbaxArPDKWMixcsbkw6tlFllhFaKIlWpAAQjpIqRqpGkj32ZjCU54stvQRk0yaAubG4jNDEHiYnU1kpkxpu8hkzYbFgDrEne8C2kskmFZPEAJzkenynliDKPUNoYjlaVfdBtqYpXcnWEQZyVKecvF5FsVtJD7kkoCgtoakIuGh6RkGAtV0iinOOVdIoFzgQ1DlBby1a89w0viKZitmoVRzzhgOcolOWLWjXZkCqQlPIQRzMuzRWI9lt4Ey75iJ+0zhGrRtFEjwtaWRoBml6ZhrAskN04bdiyNaFDyLFQGrrPEMlRoMPDQyQ                  ydIB2kNSCcx4qgVkJeWVYNDL+0hG9L2lwBFnqTzfMKWDMdytKQG+YRDErJMLuw6UBaKEmFStAxj2qljKrCb94GoIErNF0EIlKlHK8ojmGFTKM00M5GdaxhwlxPK89p1I6NHJNySWLSSlhsRQwytNut2Sce46nxyib9n8Qv6L/AMpB+sWUWFxl9FNRE3yM0k2ZXAsaT+Qv8oGrsqsf8p/+pioCTCbLFzNZ8JcXi+x8E66ow8VM2MQjWyU+hj9E1YJXZgYmiRMl6hvadTUwjsMkb0MFhux1eo4LWReZzbyA+8WMPoVKTMCipJyBJOgGZPgJv4HshiauZApqf3+9/wBR9bTvdidm6WHAKrduLNmx+3gJrVDbQSseL1lY8f2cDT/w8Fu/iGv/ALUAHxJnj/4fpwxDeaD7zuHqZQD1I/SJTojiz/h4f9R/8f8A+oOp2AqL7tZG8VK/UzuPa5ZSj15nCJnxpnz6p2SxK6Krfyt97RB9j1xrSceV/lPpb1uIgKmJIzGvzk3wx8YPgR8rxOHdMmVh/MCPnA00Jn1WpjUcZqCt7EEXtFDsDD1ASq7h/wBmXw0iOH0Z8EkrRwFLCX1hKmGAE63EdknOaVR/yX6j7TJxXZXGC9gjfyv9wIrgyLhP6OZqmxib1pu1uzWLGtBj4FT8jM2psSuD3qLj/ibfCGK+zdWtoVSpeNIIM4QrrlPUeNKvANjIEusBvy4eSYthRLQL1II1pooIxv2kapeKb95C8ZIw0riWLCIB84VHjNClqsXWpbKEqvlEi1zNFDRG/aSRfekj0Y+s+yBhkQDSXSkTDphesp1O1yBBJ7GBhSdTLLh5qBsWtLJSuYyUhbgZCYNFKWFzE0adMAaRag9z4Q5eMgdQu/AVKgi+JrxL+Lv4wOSCosarPFqjwDVYs9aI5FIxGHxGUXGJ4XgqhvE2fOJ2Y/RGr7QkQGIeE2fhnqtup5ngPGadTs4//qL6H7x4qUlgm5Ri6bOPeqVe1+62R8ec2                  8NUs62/Vl9pbF9kGf8AzkB10Py4zodj7OSig3iHf9xFvQRlxtvIsuaKWMilNX/afSFHG4ImwXBlSOUr8f7I/O/ox2fMCFGHY+6pPgDNL2hHAekOmNMz4jfyP0c7jdjb4s9EMOqgzmMf2NoH3Q9NulyPRvpPprYm/GCLg65+UD4UxXzKW0fEcd2WrIboVcdO63ofvMnEYd0PfRl8R9Z+gXw9Nsyin/iICvs2g4s1FGHIqD65Sb/529MSTi9I/PjvBB598Xsvgv8AS0fNAfnG8NsbC080w9JTzWmgPraZcDQh8Nwex8RUAKUKjA6EI1j52tNjDdg8c/8AkhBzdlX4C5n2l6oAsABBe3MZcC9YKPluG/wtxJPfrUkH+3ec/SdLgf8ADPCoB7R6jnj3txfIAfWdYr9ZY1so64ohMSn2LwC5jDqf5iz/AAJhm7O4TT+Go/8Atr9poPiIF8R4x1GK8BRnf+W8H/pqX/QTyEqYnPWSHH0agNNAIbKLJUGcIKovOezsouxlG0kWuDPEe56Caxkj1VtnKu4Gss/OeUaG8bnSCx0glEWHjPWaXcxd25TWNQKq0QxCcQc407xNql8pNsKQsK/A5EQbvPcUl8+MVoo7ncRSzHKwzMWxsbD+1yjWytiVK7AkFE4sw1/lB1m1srsyEs+INyMwo0vw3j+rwmpXqFjYE9ALgdABpHjD2RCfN5EZwtGnSQIg+5PEmL4nf4KT5iOUqG4tybniTn6RWriRf+s6FRyPIicNUa+W7/y+kJQwBGbvfzP1hv4gc/hBvW6m0NIFsYCLDBlA1EzPa21PmYRX5/LT1g7UahzfHODdwIIuPzWXWiW42h7M3Ur7flGKZPKeJQVOZPWevUyjK2AJnxvPImcQZUV78R+cs4UAe34N6kVNUDiTPPajn+eUNmGSw4mVFQCK/wARy9ftPDU4ep1gMMNWlHr/AJwi5cccvnPC/X4EzGCe0v8Ac5QTueeUpUrfhykRr/26TGBkH8tJK1L                  XzGf51kgo1iKI1h5yyq9zaPqqgCEQi05aO9MQSi4GepmhRp7q58ZRnFxJUxYuB1mWENVh3TQT133coFcSCxPL5wLveDsOohWqQLPKmAdoGw0VrvaK1GBjDPc5wAos7BVGZ9B1MGwa2Dw1Bqjbg8zwA4kzsdj0aNFCVAB4sbbz+vDpOH23tGnhB7124nmekV2VtupWQO1lUmyDdu79QL6Za2A5Ro/18Icr7YO2x20S7WB42yz+RvG8AnDiNT48LxLYWy2Vd9/fOg/aPvNHEuEFlGfx8THV7ZB1pFMdXytfLj9JhV8Xn65D7CFxmJAGZu18ud+nWYtSqNbhevvE+HC3z1gcsmHXx4Bzv4fe5ygKu17H3j4DT14zHfEqeJPUm/oNBNzs9sUVu+99y+QGjW1uePlCpN4RuqWyYXHF2AVXY/yk+eU6XD4M2G96RpaQTJVAA4ASjV1HESih9it/RKeHAP4IU1ABlnE3xF9PX7dIFq9vhYf0jJJC5G6rk/nP8/LwT6Z6W1PHwg0rZ3PXPgOZ+nnBYisM7HTVvoIbCoi+Iq20v4mLjEnjl0uPnI6F8xcnne1vAzGxNOqj973dSQb5DW94vZML45JWbiVr+HXT4zx6ltT5aesylxuQuQOoz9Bzi1XHDPvADqfy03ahepuNiPDLheXSsAPeHlx6Tn6de5sp3rcRp5R6ixyLHhpp/bjMpBofetbJTnz5X/DFsXtAILZFuVzrbjz84ntLGbgsGuenDlObxOK5m1vUw9haOhoYpmYZjqczmeCj7TU/igt13s+Ntf7ThRtzc0/t18Yn/wCPPcm9ydeucHdI1HeOzE33vTSSY+zNsJud5sySf0/XOSbsajcTFCejGdZxw2wOcuu1geM5rZ6C6nVHF56yqVLmc9Tx4uDf8tG8Hiw1zfjFbHi0bdJodHJNhM5K4/OEcoVoEMPrRJ4wGJogCOUKotaSpRvHrAtnPYhiucXr7XFCiznlcnpwAmzWwG/MTaXZQOpD1                  W3MjugWvbQExMpgk7VHzsUa+Oq3szbxyUcBzPIdTPpuwNnGgF3gCVyF8wOZtz/OM19nYTDYKgAoAYi7E6nxM5rE9pkaqFBsOmfw4y8lSRypXbPoi4wBciLkf3mZia2RPDh9wOP1gNn4kFQQCSRxza3gMlXxPhL1k1JOh0Gdz1mTbRNqjnNoVHZstRbyGeXx+PojiMM4G8/pyHC/2m6QgbO2fHnkTYDlb5w9PZwruFB7qk7zDjme6D5xKHRkbF2OazEtcIutgO9/tF539NgiACwAAAGluklDBKi2VQFGnDziGMO8STkF0HzbwH0lEuqFb7DGIrZZnXh8yZlnFXORv4DL+0mJqi2Z1sLePCZtTHBTujLXTO3U/Qc5RSEaNKpVGgzbjc6ePXj5TOavmWLWufHloPKZtXH3BF+luZ4356fKI4nHAD5f/Y+P9Ykp0UhBs6U7RQCwJJHibfc/15wOHrGseSDX85/1mFh8PXcXRGCkamy345X4aeM09k0mpoVcFTvHU5nz46SMps6uPhSeTfd1RC2QAE5Pau203XCm7MCP5RCdoMbZCL5H7WnBDEd0+kyk26RTkSjHJo1dpEZA5nj46gTT2VssVbEkufC4BOg5Ccejb73JyAnWdndrqi7hI1yA96/Py65S3+nBFWdGMGtNdATpzGWvyiLCs3uIx6nIWvlmZrYFg53iQeAHAD6+M2kpAiSc7xE6o8FK2fP9pYeugLOhtqStjYeWc5DE7TL+7p859g2k6qDOWbYNF1LkWZmbLgRYd71uJuz9BL/mXhwCsTrGUp9JobW2YKL933T8JWmVPpGVM5JRcXTFu9zkjWUkIpkNhXH6hPAj85q7t2hTSHKQ+Rh7MykxFRdQfLOaOz9sBcj8ZcUwIFwpyIBi/Le0UjOSOlwG0Ub9Qm5RxQyAN+c+efwoGaMVPTMekc2ftJkIDnzhTT0XjzXhn0uhWA0jaYi41nKYXaG8BnNKjibxlIrs2GxMzdq4zc3S3u3ufKM                   UqkM6K4KsARxvG2Kz5x2h261ZitPe3dL/ADnOYPDMKyb17XN7+Byn1sdn6IzCCZu1eziOMlsRpuzZQringrs3a+53S3d5D88vObWJ2sNzu2vZshz8p82x+Er0WN1JW+oz8DaaHZKq9apbNUWwY6XvmFHpc+U0W6JSjnKNk7NqV3DFyiLrbVrcAToPtOp2FVCOKYbI55nM8/7zmO2vaZcMq06SguRkOAH7m+04zs5tyotVnZyWJ1JJuOg4nWw6+UpGNCSl4ff62JG6RfIanh5dZh4/F5DmdFB4XGRPj85yNbtKCm6X1OfAWFyQOJPDz5mwRxm37726Tpqdbm1gvLM+kMpeCxRsYvHBWYXvu5/QW6m8zU32FrWvqeh1+ufSX2dhwwDOcrDLiSRlf4nzltqY9bsB18NQBbyX4wNpIaKtmZicUEuTlNTsps5aqjEPmCTuLwsDbeI45g2nB4+s2Irph6ZzdlW/K5sT4AZ+U+y4PCrQpqi5KqhR4AWEnJM6uKrf6B7Y2gtFL2z/AKzg9sdoneogGQDE+Omse7ZY+4tf8vOCFbeq35ZfeCnL/CkpKNfZ1m28VvAHpOXxLWRz0JE0sXid5QOkxdoVe4VGpy+8MVTI8s7RVHKqLakfEzV2JRK3Y5s3w6TL2am81zoBNWjU3co8ifCqds7nYlayX6xrGdoFpqc5xw2oESwMwsTi3qG15Hq7OqXNGKOgxPa1yS26p/bvC/nbQ+cWpbddjvMxLH8sAMgOkxWpDjnPbRk0cn8l3dG1jNoI+dVgFF/Fssgo4mZGDqbxF9BmYBqKXvui/wA41h7eAh7KKJSm5u2EeobySxQT2T+Vi0Fq85VKxk3rxaoSDESsF2MNiIv7SDDZywSHqkZsOtTKAdoyqd2K1RYwxQQ2Gxrpobjl9p0Wz9sX4zki01dnUw62OovYjIiO6StlY8jidvh8fcCaFLGdZ88qV6lM5HeHoftGMP2gtkwKnrlAneiq5Ys+jU8UDxhPaAzi                   cNtlcs5p0tpg8Y1lVT0auPCbpJtMNSaLAlCobvAhTnfTMeGnhNTCOtRt5z3Bw/ceV+U0sTi1YQJ5saUbVHynb2Hd6ju76nkbAWyAvmeWlusQ2QoFVgDe6kC+VvKdntjZJdywzHynP43ZAXXI+keM3WSMuFLQjXdgSxYtwOdiLaBevC8vh64XU2NuGfO9r9c/AieYTY1esx9kpcLqT7vrxMI3Y/Fb1ito3ZPZH4ZeI1Ke2Mh3hbI69LCK0qtTEv7OiN5zryUaXY8BI3Yqoi7ztnyHGfRuyXZ5cLQC277d524knhfkNIjp6LQhJb0c/wBnOxS4aslZ3Zqi7x4BQSpGmvE8Z020MUACI9jQLBhqJxW3doBbi8nKT9OmMYxWDC7Q4nfe05qkO+x6xvG4y5JidCUiqRycsrkHqkmJP71uUaqVLCKIucZEpSsdwxtpDVGvPKWEe11QsOa2Yee7e08VCTYAk8gLxZSoPakB3Segh0TdlkTOxFpdlk+9nNKUnsXeU3oWoIqxzhjkyeBhBeEC2laMZbSZmi8gvaGeSrtnPYtFAlF5aqIKksKIPRNA1pR+mmUqlPKebxHGF5QzGSg3ZmYlM5pKconXGcEcMW8meFmvso2uIoqCaGykzMM5WigTGCIVGuLG1uuc0No5LMdmiRQsmD3Le6SPDSWWvUXjf5yQqESjk0NGTWUxnD7fdcjfLhpNSjt8cWmBVphhmIg9OxyMMWpFY88ls+l4DHgrvHIfOVwOz1xVQu5tSU/9zyHScAuLq2tvXE0afaSsihN0BRoF0hovHni9n1inXpIoRFCqMgBYCD/igZ81w/af91x4zRo9pU/dFfYrGcKwztPZBnBbRbN9hL47aYHGcXiO1yBSAbmc5je0TPoZkpPRnyQW2dZtXtAFBs04jaO0S5JJmfiMYzHXOAUcTHjCss5uTncsIKASbmHQHQQKZ6Ryiu7mdfzKNKVI55So8pbOdzmyjpqRH8BspSWVmub2B0sR00iwq                   ulip1N/Ge0McyluN88+fOCMk9idmxs2pva7Iw0b3b8pp4Cujsd9kSqSAoCsBU8WAKBrm2ZWc+5ao2ZuTG8Lh0c7hG8ALk8+cWVS/q/QqTi00au2qQ3SSN111BFjrmDMmhTZzZFLG17DlOr7QYSlUBxClzQYkFk96la1t5D7ygEAjIi2swcPgUR99cTbk4BQNcfpJ18DaLDgccPQZyUnZ5T2Rv7oIemcw28pIvwZScrcxe+XXIO0OzOIpLvsqsl7XVgTnoSOF50OKV33N27BiLNc5HmRpbrcwWLx1V66nf8AaJZUJYizKNe7a1tbfGHkuMkogj19OeTZdRSu8tlb9YzX1EbxGAS3dck8/wCk6vFYVhu0CrbtTNWFNEVQBe4ZXN/MDSc/jdhVUeyd8cxl8IOTj5H/AGjoeDirTOWqkg2Osk6CpsCq53t5B0Oo6GSP05PoW0YyVLQiPEd8y9OpnA4k7NRamUjAmDp6RymmUm5UMnZYCyiJPUzM0sWtl8pzzud4wxXYDiNb2c1dnmx8pjiNYaobiCUR06HdovkZkXmjisxM5VzmjhCsta8uiT1ZV6ljM7GjouYm4zhw95XcvNHAGiKIF46tKDKRkxLoAiTx6Q5CNquUBVgvJryLMg5T2nhl5esjS9OUbwN4Mph1PAekap4ZR+keglKAjYWc8pOyebFK68ANOUW3LnoI45gsQABa+ZzhixqAVokzZwjkkyLhyZZYWQpDKNuJf9T38lH3Mrh8UyHeU2OnQjkZfE0zlyCgfCKuM4kcuzNG7sXb7UaVVDnv2Zbi43xkVI5MpIMz0xgpuz0kAvpvDeKcwvPoeUAi5TR2ciU1bEuAwpm1NDo9XUX5qvvHyHGO+R0Fobq7VqYdQKhL1nAZkY2FOmRdVNv1NkSOAtzgsBtCk7broUd37pTJbGwUHMWmBVqO7l3Ys7tdidSSczJiB3jbhl6Ro43kCPovsKyBQHI3Dfce4U3Fv+N+YmdtHb9ZEdKuHtvXCM                    jXUZZZ+OcxcP2mrpSu7GrfupvsSVAHA8RpkYlitqtVNhdU/Ze44H4HSX7pRwCrZoJ2kqEDfRGIFt7ibcT1kmcEE8kfmkN1Qqi5QQHekkgEHFxFo/hq+kkklNIZB8ZWymKJJI3HooHpNwjFIZiSSCQPRmrEiZJIorCKItWMkkKDHQNDDobSSTMz2WauBAviOUkkdJUKyy1ZSoZJInoq2Bh6SySSktDvRpUEh2OUkk5HsmhRj3h4iLYj3m8TJJKxHegCkCMUG5ySSk/xD4N4u26LcgZj1Gzkkk+HQRrC0izKo1YgDzlttYkFlRfcpjdUc8+8x6k5+kkkaP5gkKYJbuOlz6AmBY385JJRfkzIvtEWKr+1R6nMxRHtJJHj+IRtK2UkkkFDH//Z" alt="Our Mission Image">
+                <div>
+                    <p>Our mission is to protect and preserve endangered animal species around the world. We work towards conserving their natural habitats, supporting wildlife research,opposing poaching, and raising awareness about the critical importance of biodiversity.</p>
+                    <p>We believe that every species plays a vital role in maintaining the balance of our ecosystems. Through various conservation programs, partnerships with other organizations, and community outreach, we strive to make a significant impact in the field of wildlife conservation.</p>
+                </div>
+            </div>
+            <h2>Our Values</h2>
+            <div class="about-text">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60F7GPaiADz3bwWOvqmzIPH0Six1JkkkCXQ&s" alt="Our Values Image">
+                <div>
+                    <p><strong>Commitment:</strong> We are dedicated to the cause of wildlife preservation and take every action with utmost responsibility and care.</p>
+                    <p><strong>Collaboration:</strong> We believe in working together with local communities, governments, and other organizations to achieve our goals.</p>
+                    <p><strong>Education:</strong> We aim to educate the public about the importance of wildlife conservation and inspire others to join our mission.</p>
+                    <p><strong>Innovation:</strong> We embrace new ideas and technologies to improve our conservation efforts and adapt to changing challenges.</p>
+                </div>
+            </div>
+            <h2>Our Achievements</h2>
+            <div class="about-text">
+                <img src="data:image/jpeg;base64,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" alt="Our Achievements Image">
+                <div>
+                    <p>Over the years, we have successfully implemented numerous projects that have contributed to the protection and recovery of several endangered species. Our initiatives include habitat restoration, anti-poaching programs, and captive breeding efforts.</p>
+                    <p>We are proud of our partnerships with local and international organizations that have helped us amplify our impact and reach. Together, we have made strides towards a more sustainable future for wildlife.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Endangered Animals Website | Created by Arnav Patil, India</p>
+    </footer>
+</body>
+</html>
+

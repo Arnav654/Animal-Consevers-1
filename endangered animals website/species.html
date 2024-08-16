@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Species - Endangered Animals</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #e8f5e9; /* Very light green background for a fresh feel */
+        }
+
+        header {
+            background-color: #388e3c; /* Dark green for the header */
+            color: #fff;
+            padding: 30px 0; /* Increased padding for a larger header area */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px; /* Increased margin between menu items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 22px; /* Increased font size for navigation links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4caf50, #66bb6a); /* Green gradient background */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px; /* Reduced padding for the hero section */
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .species-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .species-item {
+            background-color: #c8e6c9; /* Light green background */
+            border: 2px solid #4caf50; /* Green border */
+            border-radius: 8px;
+            padding: 0; /* Remove padding as it will be handled by image and text containers */
+            margin-bottom: 20px;
+            overflow: hidden; /* Ensure content fits within borders */
+        }
+
+        .species-item img {
+            width: 100%; /* Make image fit the container width */
+            height: auto;
+        }
+
+        .species-item .text-content {
+            padding: 20px;
+        }
+
+        .species-item h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .species-item p {
+            font-size: 1.1em;
+            line-height: 1.6; /* Improve readability with increased line height */
+        }
+
+        footer {
+            background-color: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0; /* Increased padding for footer */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Endangered Species</h1>
+            <p>Explore some of the world's most endangered species and learn about their unique characteristics and the challenges they face.</p>
+        </section>
+        <section class="species-list">
+            <!-- Existing Species -->
+            <div class="species-item">
+                <img src="https://cdn.britannica.com/71/174271-050-B90CC219/Siberian-tiger-Longleat-Safari-Adventure-Park-England.jpg" alt="Siberian Tiger">
+                <div class="text-content">
+                    <h2>Siberian Tiger</h2>
+                    <p>The Siberian tiger (Panthera tigris altaica), also known as the Amur tiger, is the largest and heaviest of the tiger subspecies. Males typically weigh between 180 to 306 kg (397 to 674 lbs), while females range from 100 to 167 kg (220 to 368 lbs). These tigers stand about 80 to 100 cm (31 to 39 inches) tall at the shoulder and measure 2.7 to 3.7 meters (8.9 to 12.1 feet) from head to tail, with the tail adding an additional meter (3.3 feet) in length. Their coat is a pale orange with fewer and lighter stripes compared to other tigers, featuring a white belly and a thick layer of fat that provides insulation against the harsh cold of their habitat. Siberian tigers inhabit the temperate forests and taiga of eastern Russia, primarily in the Primorye and Khabarovsk regions, and northeastern China. They are solitary animals with a highly territorial nature, marking their large territories with scent and avoiding one another except during mating season or when a mother is raising her cubs. These tigers are apex predators, primarily preying on large ungulates such as sika deer, roe deer, and wild boar, but will also hunt smaller mammals when necessary. Reproduction occurs between January and April, with a gestation period of about 93 to 112 days. Females typically give birth to 2 to 4 cubs, which are born blind and weigh around 1 kg (2.2 lbs). The cubs begin to open their eyes around 10 days old and are dependent on their mother for about two years. The Siberian tiger is critically endangered, with threats including habitat loss due to logging and human encroachment, poaching for their skin and body parts, and conflicts with humans. Conservation efforts are in place, including the creation of protected areas, anti-poaching measures, and international collaborations to safeguard their populations. These efforts aim to preserve the remaining wild populations and their habitat, helping to ensure the survival of this majestic species.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://images.ctfassets.net/cnu0m8re1exe/6hIM0vFiDm1DDVD1KNp7Zn/0ccd745300c1f6dd74989c58875da2bc/Untitled_design_-_2023-08-23T104246.288.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="Javan Rhino">
+                <div class="text-content">
+                    <h2>Javan Rhino</h2>
+                    <p>The Javan rhino (Rhinoceros sondaicus) is one of the world's rarest large mammals, with a critically endangered status. Males typically weigh between 900 to 1,400 kg (1,984 to 3,086 lbs), while females are slightly lighter, ranging from 900 to 1,200 kg (1,984 to 2,645 lbs). They stand about 1.5 to 1.7 meters (4.9 to 5.6 feet) tall at the shoulder and measure around 3.0 to 3.5 meters (9.8 to 11.5 feet) in length from head to tail. Javan rhinos are characterized by their smaller size compared to other rhino species, with a single, prominent horn and a wrinkled, greyish-brown skin. Their skin appears almost armor-like due to thick folds and plates. Native to the dense tropical rainforests and lowland swamps of Java, Indonesia, Javan rhinos prefer thick, humid forest environments where they can find ample food and water. Historically, their range extended across Southeast Asia, but now they are confined to the Ujung Kulon National Park in western Java, Indonesia. They are solitary animals with a shy and elusive nature, primarily feeding on a variety of vegetation, including leaves, fruits, and grasses. Reproduction in Javan rhinos is not well-documented due to their rarity, but similar to other rhinos, the mating season is typically seasonal, with a gestation period of about 15 to 16 months. Females usually give birth to a single calf, which stays with its mother for several years before becoming independent. The Javan rhino's critical endangerment is due to habitat loss from agricultural expansion, human encroachment, and the impact of natural disasters. Additionally, the species suffers from poaching, although less than other rhino species, as their horn is less valued. Conservation efforts are focused on habitat protection, anti-poaching measures, and monitoring within Ujung Kulon National Park. These efforts aim to increase the population and prevent the extinction of this incredibly rare and vital species.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://southwickszoo.com/wp-content/uploads/IMG_4505-scaled-e1618511281909.jpg" alt="White Rhino">
+                <div class="text-content">
+                    <h2>White Rhino</h2>
+                    <p>The white rhino (Ceratotherium simum) is one of the largest rhino species and is classified into two subspecies: the Southern white rhino and the critically endangered Northern white rhino. Males typically weigh between 1,600 to 2,300 kg (3,527 to 5,070 lbs), while females are slightly lighter. They stand about 1.5 to 1.8 meters (4.9 to 5.9 feet) tall at the shoulder and measure around 3.4 to 4.5 meters (11.2 to 14.8 feet) in length from head to tail. White rhinos are distinguished by their broad mouths, which are adapted for grazing on grasses, unlike the narrower mouths of other rhino species. Their skin is a pale grey color and appears almost armor-like due to its thick folds and wrinkles. White rhinos inhabit savannas and grasslands of southern and eastern Africa, with a preference for open and semi-open areas where they can graze. They are generally social animals, often found in small groups or herds. White rhinos primarily feed on grasses, using their large mouths to graze efficiently. Reproduction involves a gestation period of about 16 months, with females giving birth to a single calf. The Southern white rhino population has seen significant recovery due to conservation efforts, but the Northern white rhino is on the brink of extinction, with only two females remaining and no known viable males. The primary threats to white rhinos include poaching for their horns and habitat loss due to agricultural expansion and human development. Conservation efforts for white rhinos involve anti-poaching measures, habitat protection, and in some cases, advanced techniques such as in vitro fertilization to attempt to save the Northern white rhino.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Reptiles/leatherback-sea-turtle_Getty-Images_600x300.jpg" alt="Leatherback Sea Turtle">
+                <div class="text-content">
+                    <h2>Leatherback Sea Turtle</h2>
+                    <p>The leatherback sea turtle (Dermochelys coriacea) is the largest and heaviest of all sea turtles and is known for its unique, leathery shell. Adults typically weigh between 250 to 700 kg (551 to 1,543 lbs), with some individuals reaching up to 900 kg (1,984 lbs). They have a shell length of about 1.8 to 2.2 meters (5.9 to 7.2 feet) and are characterized by their black or dark brown, flexible, leathery carapace. Leatherbacks have a distinctive appearance with a smooth shell, unlike the hard, bony shells of other sea turtles. They are found in tropical and subtropical oceans around the world and are known for their long-distance migrations between feeding and nesting grounds. Leatherback sea turtles primarily feed on jellyfish, and their diet plays a role in controlling jellyfish populations. Reproduction involves females returning to sandy beaches to lay eggs, typically during the nesting season, which can vary by location. After laying eggs, females return to the ocean, and the eggs incubate for about 60 days before hatching. The leatherback sea turtle faces significant threats, including entanglement in fishing gear, habitat loss due to coastal development, climate change impacting nesting beaches, and pollution. Conservation efforts focus on protecting nesting sites, reducing bycatch in fisheries, and raising awareness about the species' plight.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://files.worldwildlife.org/wwfcmsprod/images/Amur_Leopard_/story_full_width/9g51xqtsf1_amur_leopard_99144569.jpg" alt="Amur Leopard">
+                <div class="text-content">
+                    <h2>Amur Leopard</h2>
+                    <p>The Amur leopard (Panthera pardus orientalis) is one of the rarest big cats in the world, with an estimated population of fewer than 100 individuals in the wild. Males typically weigh between 60 to 80 kg (132 to 176 lbs), while females weigh between 40 to 60 kg (88 to 132 lbs). They have a body length of 107 to 136 cm (42 to 54 inches) and a tail length of about 60 to 90 cm (24 to 35 inches). Amur leopards are characterized by their distinctive golden-yellow fur with black rosettes and a white underbelly. Their coats are relatively thicker and longer compared to other leopard subspecies, providing insulation against the harsh winters of their habitat. Native to the temperate forests of the Russian Far East and northeastern China, Amur leopards inhabit mixed forests with a rich undergrowth. They are solitary and elusive, primarily preying on roe deer, sika deer, hares, and birds. Reproduction involves a gestation period of about 90 to 95 days, with females giving birth to 2 to 4 cubs in a den hidden among dense vegetation. Cubs remain with their mother for about 1.5 to 2 years before becoming independent. The primary threats to Amur leopards include habitat loss due to deforestation, poaching for their fur and bones, and prey depletion. Conservation efforts are in place, including anti-poaching measures, habitat protection, and the establishment of protected areas to ensure the survival of this critically endangered species.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://static.wixstatic.com/media/9edcbb_60697eb9025f487c9e9f4802fb754184~mv2.png/v1/fill/w_636,h_433,al_c,lg_1,q_85,enc_auto/9edcbb_60697eb9025f487c9e9f4802fb754184~mv2.png" alt="Indian Star Tortoise">
+                <div class="text-content">
+                    <h2>Indian Star Tortoise</h2>
+                    <p>The Indian star tortoise (Geochelone elegans) is a medium-sized tortoise native to India and Sri Lanka. Adults typically weigh between 4 to 8 kg (8.8 to 17.6 lbs) and have a carapace length of about 30 to 35 cm (12 to 14 inches). They are named for the star-like patterns on their shells, which are a series of radiating lines forming a star-like pattern against a yellow or tan background. These distinctive markings are more pronounced in younger individuals and may become less distinct with age. Indian star tortoises inhabit dry, grassy areas, open woodlands, and scrublands, where they feed on a variety of vegetation including grasses, fruits, and flowers. They are primarily herbivorous and have a slow metabolism, which allows them to survive on limited food resources. Reproduction involves a mating season during the monsoon rains, with females laying a clutch of 4 to 10 eggs in a nest dug into the soil. The eggs incubate for about 90 to 120 days before hatching. The Indian star tortoise is considered vulnerable due to habitat loss from agriculture and urban development, as well as the illegal pet trade. Conservation efforts focus on habitat protection, regulation of the pet trade, and captive breeding programs to help sustain wild populations.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://www.doc.govt.nz/thumbs/hero/contentassets/22c4c0407c1142ffbd70ef6ff029d722/stella-the-kakapo-codfish-1600.jpg" alt="Kakapo">
+                <div class="text-content">
+                    <h2>Kakapo</h2>
+                    <p>The kakapo (Strigops habroptilus), also known as the owl parrot, is a critically endangered nocturnal parrot native to New Zealand. Adults weigh between 2 to 4 kg (4.4 to 8.8 lbs) and have a length of about 50 to 60 cm (20 to 24 inches). Kakapos are notable for their large size, greenish-yellow plumage, and distinctive facial disc feathers that give them an owl-like appearance. They are flightless, with strong legs adapted for climbing and walking. Kakapos primarily inhabit forested areas and are herbivorous, feeding on a diet of leaves, fruits, seeds, and flowers. Their reproductive behavior is unique among parrots; males participate in a lekking display where they call to attract females to their breeding grounds. Females then nest on the ground, laying 1 to 3 eggs per clutch. Kakapos are critically endangered due to introduced predators such as rats, cats, and stoats, as well as habitat loss. Conservation efforts are focused on intensive management, including predator control, habitat restoration, and a captive breeding program to boost their population. The kakapo recovery program has successfully increased the population from fewer than 50 individuals to over 250, but continued efforts are essential for their survival.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrUefqoTQlEoLxMGD3UL85hmj_aRme_vMdIw&usqp=CAU" alt="Blue-throated Macaw">
+                <div class="text-content">
+                    <h2>Blue-throated Macaw</h2>
+                    <p>The blue-throated macaw (Ara glaucogularis) is a strikingly colorful parrot species native to Bolivia. Adults typically measure about 75 to 80 cm (30 to 31 inches) in length and weigh around 1 to 1.5 kg (2.2 to 3.3 lbs). They are known for their vivid plumage, which includes a blue head, green body, and bright yellow underparts. The blue-throated macaw inhabits the lowland savannas and gallery forests of northern Bolivia, where they are primarily found in palm and forested areas. They are social birds, often seen in pairs or small groups, and feed on a diet of seeds, fruits, nuts, and flowers. Breeding occurs in tree cavities, with females laying 2 to 3 eggs that hatch after about 25 to 30 days. The blue-throated macaw is critically endangered due to habitat loss from deforestation, illegal pet trade, and nest poaching. Conservation efforts include habitat protection, captive breeding programs, and community engagement to reduce illegal trade. Ongoing efforts aim to increase their wild population and secure their future in their natural habitat.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPwlkq14eHmguk2k_t-y_VUt7mU05ojRuEpA&usqp=CAU" alt="Golden-Crowned Sifaka">
+                <div class="text-content">
+                    <h2>Golden-Crowned Sifaka</h2>
+                    <p>The golden-crowned sifaka (Propithecus tattersalli) is a critically endangered lemur species native to Madagascar. Adults typically weigh between 3 to 4 kg (6.6 to 8.8 lbs) and measure about 50 to 60 cm (20 to 24 inches) in length, excluding the tail. They are distinguished by their golden-yellow fur on the crown and upper parts, contrasting with white or pale underparts. Golden-crowned sifakas inhabit the lowland rainforests of northeastern Madagascar and are primarily frugivorous, feeding on fruits, leaves, and flowers. They live in small family groups and are highly arboreal, spending most of their time in trees. Reproduction involves a mating season during the rainy season, with females giving birth to a single infant after a gestation period of about 4.5 to 5 months. The golden-crowned sifaka faces threats from habitat destruction due to logging and agriculture, as well as hunting. Conservation efforts are focused on habitat preservation, anti-poaching measures, and research to better understand their ecology and behavior. Protecting their remaining forest habitat is crucial for the survival of this unique species.</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdbxPp-__dRhUYbSyGPu4YGUw74T-Br8l_YBmQEI5njGkSK5c" alt="African Forest Elephant">
+                <div class="text-content">
+                    <h2>African Forest Elephant</h2>
+                    <p>The African forest elephant (Loxodonta cyclotis) is a fascinating species that inhabits the dense rainforests of Central and West Africa. Unlike its more famous relative, the African savanna elephant, the forest elephant is smaller in size and has adapted to life in the thick jungle environment. Adult males typically stand around 8 to 10 feet tall at the shoulder and weigh between 4,000 to 10,000 pounds, while females are slightly smaller. They are recognized by their more rounded ears, straighter and thinner tusks, and a generally more compact body structure. These adaptations are crucial for maneuvering through the dense underbrush and navigating the complex forest floor.
+
+Forest elephants primarily feed on leaves, fruits, seeds, and bark, which they find in their rich forest habitat. Their feeding habits play a significant role in their ecosystem by aiding in seed dispersal and influencing forest composition. For example, as they consume fruits and seeds, they excrete them throughout the forest, contributing to the growth and distribution of various plant species.
+
+Socially, forest elephants are more solitary compared to their savanna relatives, with smaller, less cohesive family groups. They communicate using low-frequency sounds that travel long distances through the forest, which helps them stay in contact with other elephants despite the dense vegetation.
+
+However, these magnificent creatures face numerous threats. Habitat destruction due to logging and agricultural expansion is a major issue, as it leads to the loss of their natural environment. Poaching for ivory and meat further exacerbates their decline, pushing them toward critical endangerment. Conservation efforts are vital to their survival, focusing on anti-poaching measures, habitat preservation, and promoting sustainable practices within their range.
+
+Overall, the African forest elephant is an integral part of its ecosystem, and protecting this species is crucial for maintaining the health and diversity of the African rainforests.
+</p>
+                </div>
+            </div>
+            <div class="species-item">
+                <img src="https://www.wwf.org.uk/sites/default/files/styles/gallery_image/public/2019-11/gorilla_family_together.jpg?h=56d0ca2e&itok=NgaMCjd8" alt="Chinese Sturgeon">
+                <div class="text-content">
+                    <h2>Mountain Gorilla</h2>
+                    <p>The mountain gorilla (Gorilla beringei beringei) is a remarkable and critically endangered subspecies of the eastern gorilla, found in the mountainous forests of Central Africa. They are native to the Virunga Mountains, which span parts of Rwanda, Uganda, and the Democratic Republic of Congo, as well as the Bwindi Impenetrable National Park in Uganda.
+
+Mountain gorillas are known for their robust build and impressive size. Adult males, known as silverbacks, can weigh between 300 to 485 pounds and stand about 5.5 to 6 feet tall when upright. Females are smaller, typically weighing between 150 to 250 pounds. These gorillas have a distinctive silver patch of hair on their backs, which is a characteristic of mature males.
+
+These primates inhabit the dense, high-altitude forests ranging from 7,000 to 14,000 feet above sea level. Their thick, long fur helps them cope with the cold temperatures of their mountainous habitat. Mountain gorillas are primarily herbivorous, feeding on a variety of plant materials including leaves, stems, fruit, and flowers. Their diet is influenced by the season and availability of food resources.
+
+Socially, mountain gorillas live in tight-knit family groups led by a dominant silverback. These groups, called troops, consist of the silverback, several adult females, their offspring, and occasionally younger males. The silverback is responsible for protecting the troop, leading them to feeding areas, and making decisions for the group. Communication among mountain gorillas includes a range of vocalizations, body language, and facial expressions.
+
+Mountain gorillas face numerous threats, including habitat loss due to agriculture and human settlement, poaching, disease, and political instability in their region. They are particularly vulnerable to diseases such as human respiratory infections, which can spread from tourists and researchers. Conservation efforts, including anti-poaching patrols, habitat protection, and community engagement, have been crucial in stabilizing and slightly increasing their population. As of recent estimates, there are fewer than 1,000 mountain gorillas left in the wild, making them one of the world's most endangered primates.
+
+Organizations like the Dian Fossey Gorilla Fund and the International Gorilla Conservation Program work tirelessly to ensure the survival of these incredible animals, focusing on protecting their habitat, reducing human-wildlife conflict, and promoting ecotourism that benefits local communities while ensuring the safety of the gorillas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Endangered Species. All rights reserved.</p>
+    </footer>
+</body>
+</html>

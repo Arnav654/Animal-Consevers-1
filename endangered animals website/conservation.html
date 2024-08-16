@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation - Endangered Animals</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #e8f5e9; /* Very light green background */
+            padding-top: 80px; /* Adjust this padding to match the header height */
+        }
+
+        header {
+            background-color: #388e3c; /* Dark green for the header */
+            color: #fff;
+            padding: 25px 0; /* Increased padding for a larger header area */
+            text-align: center;
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensures the header spans the full width */
+            z-index: 1000; /* Keeps header on top of other elements */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px; /* Increased margin between menu items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px; /* Increased font size for navigation links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4caf50, #66bb6a); /* Green gradient background */
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #388e3c; /* Dark green text */
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            border: 2px solid #388e3c; /* Dark green border */
+        }
+
+        .cta-button:hover {
+            background-color: #f0f0f0; /* Light grey on hover */
+        }
+
+        .highlights {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            gap: 20px; /* Space between items */
+            margin-top: 20px;
+        }
+
+        .highlights h2 {
+            margin-bottom: 20px;
+            font-size: 2em; /* Larger font size for the heading */
+            text-align: center;
+        }
+
+        .highlight-box {
+            display: flex;
+            gap: 20px; /* Space between text and image */
+            align-items: center;
+            background-color: #c8e6c9; /* Light green background */
+            border: 2px solid #4caf50; /* Green border */
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .highlight-box img {
+            flex-shrink: 0; /* Prevent image from shrinking */
+            width: 400px; /* Set a fixed width for images */
+            height: auto;
+            object-fit: cover; /* Ensures the image covers the area */
+        }
+
+        .highlight-text {
+            flex: 1; /* Allow text to take up remaining space */
+        }
+
+        .highlight-text h3 {
+            color: #4caf50; /* Green color for headings */
+            margin-bottom: 10px;
+            font-size: 1.5em; /* Larger font size for headings */
+        }
+
+        .highlight-text p {
+            font-size: 1.1em; /* Slightly larger font size for paragraphs */
+            line-height: 1.6; /* Improve readability with increased line height */
+        }
+
+        footer {
+            background-color: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed; /* Ensures footer is positioned normally */
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Conservation Efforts</h1>
+            <p>Explore the critical measures being taken to save endangered species and protect their habitats.</p>
+        </section>
+        <section class="highlights">
+            <h2>Why Conservation is Essential</h2>
+            <div class="highlight-box">
+                <img src="https://www.green.earth/hs-fs/hubfs/7%20strategies%20for%20Protecting%20Wildlife-Pillar%20%20Protecting%20Vital%20Habitats_visual%201.png?width=1800&height=1200&name=7%20strategies%20for%20Protecting%20Wildlife-Pillar%20%20Protecting%20Vital%20Habitats_visual%201.png" alt="Protecting Habitats">
+                <div class="highlight-text">
+                    <h3>Protecting Habitats</h3>
+                    <p>Preserving natural habitats is vital for the survival of endangered species. Without their natural environments, many species would face extinction. Habitat conservation involves protecting large areas of land and water to ensure that wildlife has the space and resources they need to thrive.</p>
+                    <p>Efforts include establishing protected areas, combating deforestation, and restoring damaged ecosystems. These measures help maintain biodiversity and the overall health of our planet.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <img src="https://planetrhino.tcu.edu/wp-content/uploads/Soldiers-Vehicle.jpg" alt="Anti-Poaching Efforts">
+                <div class="highlight-text">
+                    <h3>Anti-Poaching Efforts</h3>
+                    <p>Poaching remains a significant threat to endangered species. Anti-poaching initiatives aim to combat illegal hunting and trade of wildlife. These efforts include stronger law enforcement, monitoring wildlife populations, and increasing penalties for poachers.</p>
+                    <p>Collaborative efforts between governments, NGOs, and local communities are essential for the success of anti-poaching measures. Education and awareness campaigns also play a crucial role in reducing demand for illegal wildlife products.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <img src="https://dq8l4o3au0fto.cloudfront.net/image-handler/ts/20230903074306/ri/750/src/images/news/ImageForNews_957_1693784572808505.jpg" alt="Wildlife Monitoring">
+                <div class="highlight-text">
+                    <h3>Wildlife Monitoring</h3>
+                    <p>Monitoring wildlife populations helps track the health of species and the effectiveness of conservation strategies. Techniques such as GPS tracking, camera traps, and population surveys provide valuable data on animal behavior, migration patterns, and population dynamics.</p>
+                    <p>This information is crucial for making informed decisions about conservation efforts and adapting strategies as needed. Continuous monitoring helps identify emerging threats and assess the impact of conservation actions.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <img src="https://www.borgenmagazine.com/wp-content/uploads/2022/05/Wildlife-Conservation-Helps-Communities-1024x685.jpg" alt="Community Involvement">
+                <div class="highlight-text">
+                    <h3>Community Involvement</h3>
+                    <p>Engaging local communities in conservation efforts is essential for long-term success. Community involvement includes promoting sustainable practices, providing education on wildlife conservation, and supporting local livelihoods through eco-friendly initiatives.</p>
+                    <p>When communities are actively involved in conservation, they become stewards of their natural resources and are more likely to support and participate in efforts to protect wildlife and their habitats.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <img src="https://curationcorp.com/wp-content/uploads/2021/07/analysis-4402809_960_720.jpg" alt="Research and Education">
+                <div class="highlight-text">
+                    <h3>Research and Education</h3>
+                    <p>Scientific research and education are fundamental to conservation efforts. Research helps us understand the needs of endangered species and develop effective conservation strategies. Educational programs raise awareness about wildlife conservation and inspire future generations to get involved.</p>
+                    <p>Investing in research and education ensures that we have the knowledge and tools necessary to address the challenges facing endangered species and to promote a culture of conservation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Endangered Animals Website</p>
+    </footer>
+</body>
+</html>
